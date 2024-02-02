@@ -7,3 +7,5 @@ Highlight Web Assembly code inside JS Tagged Template Literal Strings.
 # Resources
 
 https://github.com/mjbvz/vscode-js-template-string-grammar-injection-example/tree/master
+
+https://github.com/jcmellado/vscode-wasm-syntax-lite
