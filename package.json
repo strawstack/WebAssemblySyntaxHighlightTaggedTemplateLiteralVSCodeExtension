@@ -1,0 +1,29 @@
+{
+  "name": "js-tagged-template-string-wat-grammar-injection",
+  "displayName": "JavaScript template string grammar injection for Web Assembly",
+  "description": "Get syntax highlighted Web Assembly inside Javascript source code files.",
+  "version": "0.0.1",
+  "publisher": "richard",
+  "repository": {
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "engines": {
+    "vscode": "^1.15.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "meta.embedded.wat.string.template",
+        "path": "./syntaxes/injection.json",
+        "injectTo": ["source.js"]
+      }
+    ]
+  },
+  "dependencies": { }
+}
