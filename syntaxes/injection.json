@@ -28,7 +28,7 @@
 			]
 		},
 		"wat-tagged-template-with-function": {
-			"begin": "(?<=wasm\\(.*?\\)`)",
+			"begin": "(?<=\\)`)",
 			"end": "(?=`)",
 			"contentName": "meta.function.embedded.html",
 			"patterns": [
