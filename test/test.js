@@ -1,4 +1,4 @@
-function main() {    
+function main() {
 
     // Some JS code...
     let a = 5;
@@ -18,6 +18,19 @@ function main() {
             return)
         )
     `;
+
+    const program2 = wasm({sam: "bacon"})`
+    (module
+        (func (export "sum")
+            (param $a i32)
+            (param $b i32)
+            (result i32)
+            get_local $a
+            get_local $b
+            i32.add
+        return)
+    )
+`;
 
 }
 
