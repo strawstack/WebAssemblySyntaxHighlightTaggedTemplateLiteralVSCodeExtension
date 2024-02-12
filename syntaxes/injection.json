@@ -5,13 +5,32 @@
 	"patterns": [
 		{
 			"include": "#wat-tagged-template"
+		},
+		{
+			"include": "#wat-tagged-template-with-function"
 		}
 	],
 	"repository": {
 		"wat-tagged-template": {
 			"begin": "(?<=wasm`)",
 			"end": "(?=`)",
-			"contentName": "meta.embedded.html",			
+			"contentName": "meta.embedded.html",
+			"patterns": [
+				{
+					"include": "#whitespace"
+				},
+				{
+					"include": "#s-expression"
+				},
+				{
+					"include": "#invalid"
+				}
+			]
+		},
+		"wat-tagged-template-with-function": {
+			"begin": "(?<=wasm\\(.*?\\)`)",
+			"end": "(?=`)",
+			"contentName": "meta.function.embedded.html",
 			"patterns": [
 				{
 					"include": "#whitespace"
